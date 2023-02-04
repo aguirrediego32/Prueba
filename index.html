@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello,world!</title>
+    <title>Eventos y funciones</title>
 </head>
 <body>
-    <h1>Hello,world! </h1>
+    <section>
+        <h1 id="title">Cambiando el texto</h1>
+        <h2 id="title2">Ahora cambie yo</h2>
+        <button id="button" onclick="cambio()">Click</button>
+    </section>
+    <script>
+        // 1 texto directamente
+        // document.getElementById('title').innerHTML = 'Mirá soy hacker!'
+
+        // 2 cambio de texto por las variables
+        var coder = 'Aprender haciendo'
+        //document.getElementById('title').innerHTML = coder;
+
+        // 3 agregar onClick en button HTML onclick="document.getElementById('title').innerHTML = coder;"
+
+        // funcion
+        function cambio(){
+            document.getElementById('title').innerHTML = coder;
+        }
+    </script>
 </body>
 </html>
